@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @Setter
 
 public class EventRequest {
+    private int eventID;
     private String eventName;
     private LocalDate eventDate;
     private String  eventLocation;
