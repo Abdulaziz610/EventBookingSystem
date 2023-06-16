@@ -24,7 +24,14 @@ public class BookingModel {
 
     @ManyToOne
     @JoinColumn(name= "UserID")
-    User userID;
+    UserModel userID;
+
+    @ManyToOne
+    @JoinColumn(name = "EventID")
+    EventModel EventID;
+
+    int ticketsNumber;
+
 
 
     @OneToMany(mappedBy = "userID", cascade = CascadeType.ALL)
