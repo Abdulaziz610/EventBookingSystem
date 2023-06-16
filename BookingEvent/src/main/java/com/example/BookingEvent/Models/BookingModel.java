@@ -21,20 +21,10 @@ public class BookingModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-
-    @ManyToOne
-    @JoinColumn(name= "UserID")
     UserModel userID;
-
-    @ManyToOne
-    @JoinColumn(name = "EventID")
-    EventModel EventID;
-
+    EventRequest EventID;
     int ticketsNumber;
 
-
-
-    @OneToMany(mappedBy = "userID", cascade = CascadeType.ALL)
     List<BookingModel> BookingTable;
 
 }

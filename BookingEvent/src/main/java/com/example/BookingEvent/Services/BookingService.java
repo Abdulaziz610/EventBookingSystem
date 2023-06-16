@@ -13,7 +13,6 @@ import java.util.List;
 public class BookingService {
 @Autowired
     BookingRepo bookingRepo;
-
     List<BookingModel> listOfAllBooking(){
         return bookingRepo.findAll();
 

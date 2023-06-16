@@ -1,7 +1,6 @@
 package com.example.BookingEvent.Services;
 
 
-import com.example.BookingEvent.Models.EventModel;
 import com.example.BookingEvent.Repository.EventRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
