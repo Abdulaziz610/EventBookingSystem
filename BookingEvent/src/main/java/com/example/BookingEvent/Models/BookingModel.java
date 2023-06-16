@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.apache.catalina.User;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Setter
@@ -25,5 +26,8 @@ public class BookingModel {
     @JoinColumn(name= "UserID")
     User userID;
 
+
+    @OneToMany(mappedBy = "userID", cascade = CascadeType.ALL)
+    List<BookingModel> BookingTable;
 
 }
