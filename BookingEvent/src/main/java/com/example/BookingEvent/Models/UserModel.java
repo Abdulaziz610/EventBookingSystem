@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Getter
@@ -20,4 +21,7 @@ public class UserModel {
     String userName;
     String userPassword;
 
+
+    @OneToMany(mappedBy = "UserID", cascade = CascadeType.ALL)
+    List<BookingModel> BookingTable;
 }
