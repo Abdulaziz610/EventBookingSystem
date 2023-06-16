@@ -12,7 +12,7 @@ import java.util.List;
 
 public class EventService {
     @Autowired
-    EventRepo   eventRepo;
+    EventRepo  eventRepo;
 
 
     List<EventModel> ListOfAllEvents(){
