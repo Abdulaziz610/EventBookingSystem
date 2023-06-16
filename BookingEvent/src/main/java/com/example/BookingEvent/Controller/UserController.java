@@ -1,6 +1,4 @@
 package com.example.BookingEvent.Controller;
 
-
-public class EventController {
-
+public class UserController {
 }
