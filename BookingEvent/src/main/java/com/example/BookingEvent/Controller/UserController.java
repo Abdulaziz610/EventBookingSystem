@@ -3,7 +3,7 @@ package com.example.BookingEvent.Controller;
 
 import com.example.BookingEvent.Models.UserModel;
 import com.example.BookingEvent.Repository.UserRepo;
-import com.example.BookingEvent.RequestObject.NewUserRequest;
+import com.example.BookingEvent.RequestObject.UserRequest;
 import com.example.BookingEvent.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ public class UserController {
     UserRepo    userRepo;
 
     @PostMapping("/api/register")
-    public ResponseEntity<String> registerUser(@RequestBody NewUserRequest userRequest) {
+    public ResponseEntity<String> registerUser(@RequestBody UserRequest userRequest) {
 
     UserModel  newUserReq   = new UserModel();
     newUserReq.setUserName(userRequest.getUserName());

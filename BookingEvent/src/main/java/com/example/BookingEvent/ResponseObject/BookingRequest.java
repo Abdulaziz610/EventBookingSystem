@@ -1,17 +1,16 @@
-package com.example.BookingEvent.RequestObject;
-
+package com.example.BookingEvent.ResponseObject;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 
 public class BookingRequest {
+
     Integer BookingID;
     String BookingName;
     LocalDate BookingDate;

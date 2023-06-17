@@ -12,7 +12,7 @@ import javax.persistence.Entity;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class NewUserRequest {
+public class UserRequest {
     String userName;
     String userPassword;
 }
