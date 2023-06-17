@@ -24,6 +24,13 @@ public class BookingModel {
     UserModel userID;
     EventRequest EventID;
     int ticketsNumber;
+    @Enumerated(EnumType.STRING)
+    BookingStatus bookingStatus;
+
+    public enum BookingStatus {
+        CONFIRMED,
+        CANCELLED
+    }
 
     List<BookingModel> BookingTable;
 
