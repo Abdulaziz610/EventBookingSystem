@@ -1,10 +1,10 @@
 package com.example.BookingEvent.Models;
 
 
+import com.example.BookingEvent.RequestObject.EventRequest;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.catalina.User;
 
 import javax.persistence.*;
 import java.util.List;
