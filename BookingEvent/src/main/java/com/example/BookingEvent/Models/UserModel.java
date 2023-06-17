@@ -20,6 +20,5 @@ public class UserModel {
     Long id;
     String userName;
     String userPassword;
-
     List<BookingModel> BookingTable;
 }

@@ -1,6 +1,7 @@
 package com.example.BookingEvent.Services;
 
 
+import com.example.BookingEvent.Models.EventRequest;
 import com.example.BookingEvent.Repository.EventRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,7 @@ public class EventService {
     EventRepo  eventRepo;
 
 
-    List<EventModel> ListOfAllEvents(){
+    List<EventRequest> ListOfAllEvents(){
         return eventRepo.findAll();
 
     }

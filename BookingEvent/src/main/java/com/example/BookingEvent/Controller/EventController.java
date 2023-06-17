@@ -18,9 +18,8 @@ public class EventController {
 @Autowired
     EventRepo   eventRepo;
 
-@PostMapping("/EventTable")
+@PostMapping("/api/events")
     public ResponseEntity<String> newEvent(@RequestBody EventRequest eventRequest){
-
 
     //Create a New Event then save it:
     EventRequest ReqNewEvent = new EventRequest();
@@ -29,11 +28,12 @@ public class EventController {
     ReqNewEvent.setEventDate(eventRequest.getEventDate());
     ReqNewEvent.setEventLocation(eventRequest.getEventLocation());
     ReqNewEvent.setNumberOfAvailableTicket(eventRequest.getNumberOfAvailableTicket());
-
     eventRepo.save(ReqNewEvent);
-
     //Response message.
     return ResponseEntity.ok(("You Have been created the event successfully"));
+
+
+
 
     }
 }
