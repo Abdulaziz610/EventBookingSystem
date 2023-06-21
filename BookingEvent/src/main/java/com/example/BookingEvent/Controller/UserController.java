@@ -28,7 +28,6 @@ public class UserController {
     userRepo.save(newUserReq);
     return ResponseEntity.ok("User register successfully");
 
-
         }
 
     }

@@ -24,14 +24,7 @@ public class BookingModel {
     UserModel userID;
     EventRequest EventID;
     int ticketsNumber;
-    @Enumerated(EnumType.STRING)
-    BookingStatus bookingStatus;
-
-    public enum BookingStatus {
-        CONFIRMED,
-        CANCELLED
-    }
-
+    Boolean bookingStatus;
     List<BookingModel> BookingTable;
 
 }

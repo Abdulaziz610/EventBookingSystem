@@ -18,11 +18,9 @@ public class EventService {
     static
     EventRepo  eventRepo;
 
-
     public List<EventRequest> ListOfAllEvents(){
         return eventRepo.findAll();
     }
-
     public static Optional<EventRequest> getEvent(Long eventId) {
         return eventRepo.findById(eventId);
     }

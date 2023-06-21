@@ -23,7 +23,6 @@ public class BookingService {
         Optional<BookingModel> optionalBooking = bookingRepo.findById(bookingId);
         if (optionalBooking.isPresent()) {
             BookingModel booking = optionalBooking.get();
-            booking.setBookingStatus(BookingModel.BookingStatus.CANCELLED);
             bookingRepo.save(booking);
         } else {
             throw new IllegalArgumentException("Booking not found with ID: " + bookingId);
